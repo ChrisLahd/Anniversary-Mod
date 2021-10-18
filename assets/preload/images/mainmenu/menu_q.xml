@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_q.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="q basic0000" x="0" y="0" width="353" height="437"/>
+	<SubTexture name="q basic0001" x="353" y="0" width="353" height="437"/>
+	<SubTexture name="q white0002" x="0" y="437" width="353" height="437"/>
+	<SubTexture name="q white0003" x="353" y="437" width="353" height="437"/>
+</TextureAtlas>
