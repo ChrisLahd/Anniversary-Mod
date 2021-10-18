@@ -273,7 +273,9 @@ class PlayState extends MusicBeatState
 		FlxG.cameras.add(camOther);
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
 
+		#if desktop
 		FlxCamera.defaultCameras = [camGame];
+		#end
 		CustomFadeTransition.nextCamera = camOther;
 		//FlxG.cameras.setDefaultDrawTarget(camGame, true);
 
@@ -2285,17 +2287,19 @@ class PlayState extends MusicBeatState
 
 			if (ClientPrefs.downScroll)
     		{
-				healthblockPiece.y = 0;
-				trace(healthblockPiece.y);
+				healthblockPiece.y = 50;
+				healthblockPiece.x += 220;
+				trace("\nUsing Downscroll\n--\nY Pos:" + healthblockPiece.y + "\n----- \n" + "X Pos:" + healthblockPiece.x);
 			}
-	                                      // I've fucked with the Y axis for an hr and didn't work. oh well, skill issue, cope, ratio
 			else
 			{
-	    		healthblockPiece.y = 720;
-				trace(healthblockPiece.y);
+	    		healthblockPiece.y = 620;
+				healthblockPiece.x += 220;
+				trace("\nUsing Upscroll\n--\nY Pos:" + healthblockPiece.y + "\n----- \n" + "X Pos:" + healthblockPiece.x);
+
 			}
 			
-			camHUD.shake(0.002, 0.5);
+			camHUD.shake(0.005, 0.3);
 					
 			healthcap = (percentageBlockage / 50);
 					
