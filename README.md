@@ -1,4 +1,7 @@
 # Friday Night Funkin' - Psych Engine
+
+<img style="text-align: center;"![](https://media.discordapp.net/attachments/869815906614771733/898770438539341864/logo.png)
+
 Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
 
 ## Installation:
