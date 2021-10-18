@@ -150,6 +150,9 @@ class PlayState extends MusicBeatState
 	public var health:Float = 1;
 	public var combo:Int = 0;
 
+
+	public static var moveAmount:Float = 25; // The amount that the camera tweens on each note hit
+
 	private var healthBarBG:AttachedSprite;
 	public var healthBar:FlxBar;
 	
@@ -2159,6 +2162,7 @@ class PlayState extends MusicBeatState
 							gf.holdTimer = 0;
 						} else {
 							dad.playAnim(animToPlay + altAnim, true);
+							moveCam(true);
 							dad.holdTimer = 0;
 						}
 					}
@@ -2767,6 +2771,57 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	var cameraTween:FlxTween;
+
+	public function moveCam(isDad:Bool) // Thanks Shadow Mario
+	{
+		if(isDad)
+		{
+			camFollow.set(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
+			camFollow.x += dad.cameraPosition[0];
+			camFollow.y += dad.cameraPosition[1];
+			
+			tweenCamIn();
+
+			if(dad.animation.curAnim != null)
+			{
+				switch(dad.animation.curAnim.name)
+				{
+					case 'singLEFT':
+						camFollow.x -= moveAmount;
+					
+					case 'singDOWN':
+						camFollow.y += moveAmount;
+					
+					case 'singUP':
+						camFollow.y -= moveAmount;
+
+					case 'singRIGHT':
+						camFollow.x += moveAmount;
+				}
+			}
+		}
+		else
+		{
+			if(boyfriend.animation.curAnim != null)
+			{
+				switch(boyfriend.animation.curAnim.name)
+				{
+					case 'singLEFT':
+						camFollow.x -= moveAmount;
+					
+					case 'singDOWN':
+						camFollow.y += moveAmount;
+					
+					case 'singUP':
+						camFollow.y -= moveAmount;
+
+					case 'singRIGHT':
+						camFollow.x += moveAmount;
+				}
+			}
+		}
+	}
 
 	var transitioning = false;
 	public function endSong():Void
@@ -3339,6 +3394,8 @@ class PlayState extends MusicBeatState
 
 	function goodNoteHit(note:Note):Void
 	{
+		moveCam(false);
+
 		if (!note.wasGoodHit)
 		{
 			if(cpuControlled && (note.ignoreNote || note.hitCausesMiss)) return;
@@ -3414,6 +3471,8 @@ class PlayState extends MusicBeatState
 					}
 				}
 			}
+
+			
 
 			if(cpuControlled) {
 				var time:Float = 0.15;
