@@ -24,6 +24,12 @@ class CreditsState extends MusicBeatState
 	private var iconArray:Array<AttachedSprite> = [];
 
 	private static var creditsStuff:Array<Dynamic> = [ //Name - Icon name - Description - Link - BG Color
+		['Anniversary Mod'],
+		['ChrisLad',		'chrislad',		'Programmer',		'https://twitter.com/ovzic',		0xFFFF00FF],
+		['Gooble',		'gooble',		'Artist / Animator',		'https://twitter.com/gigooble',		0xFFA53600],
+		['IAmDaDoge',		'iamdadoge',		'Composer',		'https://soundcloud.com/iamdadogeofdafuture',		0xFF6B00FF],
+		['Shadow Mario',		'shadowmario',		'Coding Help',		'https://twitter.com/Shadow_Mario_',		0xFFFFDD33],
+		[''],
 		['Psych Engine Team'],
 		['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',					'https://twitter.com/Shadow_Mario_',	0xFFFFDD33],
 		['RiverOaken',			'riveroaken',		'Main Artist/Animator of Psych Engine',				'https://twitter.com/river_oaken',		0xFFC30085],

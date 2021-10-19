@@ -623,12 +623,12 @@ class Snd {
 	public static var 	PLAYING 		: hxd.Stack<Snd> 	= new hxd.Stack();
 	static var 	MUTED 									= false;
 	static var 	DISABLED		 						= false;
-	static var 	GLOBAL_VOLUME 							= 1.0;
+	static var 	GLOBAL_VOLUME 							= 0.5;
 	static var 	TW 										= new SndTV();
 	
 	public var 	name			: String				;
 	public var 	pan						: Float					= 0.0;
-	public var 	volume(default,set) 	: Float 				= 1.0;
+	public var 	volume(default,set) 	: Float 				= 0.5;
 	public var 	curPlay 		: Null<Channel> 		= null;
 	public var 	bus				= otherBus;	
 	public var  isDebug = true;
@@ -647,7 +647,7 @@ class Snd {
 	public static var musicBus = new SndBus();
 	
 	public function new( snd : Sound, ?name:String ) {
-		volume = 1;
+		volume = 0.5;
 		pan = 0;
 		sound = snd;
 		muted = false;
