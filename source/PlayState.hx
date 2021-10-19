@@ -466,13 +466,13 @@ class PlayState extends MusicBeatState
 
 			case "garcellodawn":
                 defaultCamZoom = 0.85;
-				var bg:BGSprite = new BGSprite('stages/garcellodawn', -380, -100, 0.9, 0.9);
+				var bg:BGSprite = new BGSprite('stages/Garcellodawn', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
             
 			case "garcellonight":
                 defaultCamZoom = 0.85;
-				var bg:BGSprite = new BGSprite('stages/garcellonight', -380, -100, 0.9, 0.9);
+				var bg:BGSprite = new BGSprite('stages/Garcellonight', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
@@ -1040,6 +1040,7 @@ class PlayState extends MusicBeatState
 			startCountdown();
 		}
 	}
+	
 
 	var dialogueCount:Int = 0;
 	//You don't have to add a song, just saying. You can just do "startDialogue(dialogueJson);" and it should work

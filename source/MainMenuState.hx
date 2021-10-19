@@ -17,10 +17,13 @@ import flixel.math.FlxMath;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxTimer;
+import flixel.util.FlxSort;
 import flixel.util.FlxColor;
 import lime.app.Application;
 import Achievements;
 import editors.MasterEditorMenu;
+import WiggleEffect.WiggleEffectType;
+import Song.SwagSong;
 
 #if sys
 import sys.FileSystem;
@@ -36,6 +39,18 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
+	private var generatedMusic:Bool = false;
+	private var notes:FlxTypedGroup<Note>;
+	public static var SONG:SwagSong;
+
+	private var showCharacter:Character = null;
+	private var showCharacter2:Character = null;
+	private var showAwards:FlxSprite;
+	private var showCredits:FlxSprite;
+	private var showDonate:FlxSprite;
+	private var showOptions:FlxSprite;
+	
+
 	
 	var optionShit:Array<String> = ['story_mode', 'freeplay', #if ACHIEVEMENTS_ALLOWED 'awards', #end 'credits', #if !switch 'donate', #end 'options', 'q'];
 
@@ -43,10 +58,12 @@ class MainMenuState extends MusicBeatState
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
 	var danceLeft:Bool = false;
+	var bg:FlxSprite;
 
 
 	override function create()
 	{
+
 
 
 		#if desktop
@@ -60,15 +77,16 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camAchievement);
+		#if desktop
 		FlxCamera.defaultCameras = [camGame];
-
+		#end
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
 
 		persistentUpdate = persistentDraw = true;
 
 		var yScroll:Float = Math.max(0.25 - (0.05 * (optionShit.length - 4)), 0.1);
-		var bg:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
+		bg = new FlxSprite(-80).loadGraphic(Paths.image('menuBG'));
 		bg.scrollFactor.set(0, yScroll);
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
@@ -208,18 +226,23 @@ class MainMenuState extends MusicBeatState
 
 	var selectedSomethin:Bool = false;
 
-	private var showCharacter:Character = null;
-	private var showCharacter2:Character = null;
-	private var showAwards:FlxSprite;
-	private var showCredits:FlxSprite;
-	private var showDonate:FlxSprite;
-	private var showOptions:FlxSprite;
+	
 
 	override function update(elapsed:Float)
 	{
+		if (FlxG.sound.music != null)
+			Conductor.songPosition = FlxG.sound.music.time;
 
-		
-		
+
+		//new FlxTimer().start(2.35, function(tmr:FlxTimer)
+		//{
+		//	FlxTween.tween(FlxG.camera, {zoom: 1.1}, 0.05, {ease: FlxEase.quadInOut});
+     	//	new FlxTimer().start(0.03, function(tmr:FlxTimer)
+		//	{
+		//		FlxTween.tween(FlxG.camera, {zoom: 1}, 0.03, {ease: FlxEase.quadInOut});
+		//	});
+		//});
+
 		if (FlxG.sound.music.volume < 0.8)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
@@ -230,7 +253,6 @@ class MainMenuState extends MusicBeatState
 
 		if (optionShit[curSelected] == 'story_mode')
 		{
-
 	        changeItem(-1);
             changeItem(1); // This is to fix tween                           // BF IN MAIN MENU
             showCharacter.dance();
@@ -504,4 +526,5 @@ class MainMenuState extends MusicBeatState
 			}
 		});
 	}
+	
 }

@@ -5,7 +5,9 @@ import flixel.FlxG;
 import flixel.FlxSubState;
 import flixel.FlxBasic;
 import flixel.FlxSprite;
-
+import flixel.util.FlxTimer;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
 class MusicBeatSubstate extends FlxSubState
 {
 	public function new()

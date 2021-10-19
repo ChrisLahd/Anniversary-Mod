@@ -127,6 +127,17 @@ class MusicBeatState extends FlxUIState
 
 	public function beatHit():Void
 	{
-		//do literally nothing dumbass
+
+		if(ClientPrefs.camZooms)
+		{
+
+			FlxTween.tween(FlxG.camera, {zoom: 1.01}, 0.1, {ease: FlxEase.quadInOut});
+
+			new FlxTimer().start(0.1, function(tmr:FlxTimer)
+			{
+				FlxTween.tween(FlxG.camera, {zoom: 1}, 0.1, {ease: FlxEase.quadInOut});
+			});
+
+		}	//do literally nothing dumbass
 	}
 }
