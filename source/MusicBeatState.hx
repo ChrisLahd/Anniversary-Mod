@@ -13,6 +13,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxGradient;
 import flixel.FlxState;
 import flixel.FlxBasic;
+import PlayState.*;
 
 class MusicBeatState extends FlxUIState
 {
@@ -131,11 +132,11 @@ class MusicBeatState extends FlxUIState
 		if(ClientPrefs.camZooms)
 		{
 
-			FlxTween.tween(FlxG.camera, {zoom: 1.01}, 0.1, {ease: FlxEase.quadInOut});
+			FlxTween.tween(FlxG.camera, {zoom: 0.86}, 0.1, {ease: FlxEase.quadInOut});
 
 			new FlxTimer().start(0.1, function(tmr:FlxTimer)
 			{
-				FlxTween.tween(FlxG.camera, {zoom: 1}, 0.1, {ease: FlxEase.quadInOut});
+				FlxTween.tween(FlxG.camera, {zoom: 0.856}, 0.1, {ease: FlxEase.quadInOut});
 			});
 
 		}	//do literally nothing dumbass

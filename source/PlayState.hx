@@ -2690,6 +2690,16 @@ class PlayState extends MusicBeatState
 			
 			case 'BG Freaks Expression':
 				if(bgGirls != null) bgGirls.swapDanceType();
+
+			case 'HP Drain':
+				
+				if(value1 != null)
+			    {
+					for(i => i in value2)
+					{
+					    health -= Std.parseInt(value1);
+					}
+				}
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}

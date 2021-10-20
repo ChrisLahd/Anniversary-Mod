@@ -160,13 +160,13 @@ class TitleState extends MusicBeatState
 		Conductor.changeBPM(102);
 		persistentUpdate = true;
 
-		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		// bg.antialiasing = ClientPrefs.globalAntialiasing;
 		// bg.setGraphicSize(Std.int(bg.width * 0.6));
 		// bg.updateHitbox();
 		add(bg);
 
-		logoBl = new FlxSprite(-150, -100);
+		logoBl = new FlxSprite(0, 0);
 		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
@@ -217,7 +217,7 @@ class TitleState extends MusicBeatState
 		add(credGroup);
 		textGroup = new FlxGroup();
 
-		blackScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+		blackScreen = new FlxSprite().makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		credGroup.add(blackScreen);
 
 		credTextShit = new Alphabet(0, 0, "", true);
