@@ -79,7 +79,7 @@ class ChartingState extends MusicBeatState
 		['Alt Idle Animation', "Sets a speciied suffix after the idle animation name.\nYou can use this to trigger 'idle-alt' if you set\nValue 2 to -alt\n\nValue 1: Character to set (Dad, BF or GF)\nValue 2: New suffix (Leave it blank to disable)"],
 		['Screen Shake', "Value 1: Camera shake\nValue 2: HUD shake\n\nEvery value works as the following example: \"1, 0.05\".\nThe first number (1) is the duration.\nThe second number (0.05) is the intensity."],
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
-		['HP Drain', "Value 1: Amount to drain Recommended (0.5)\nValue 2: Nothing"]
+		['HP Drain', "Value 1: Amount to drain Recommended (0.01)\nValue 2: Duration\n\nNOTE: THIS WILL NOT KILL, BUT WILL LEAVE THE PLAYER ON 0.01 HP "]
 	];
 
 	var _file:FileReference;

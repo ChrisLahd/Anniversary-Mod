@@ -2691,13 +2691,23 @@ class PlayState extends MusicBeatState
 			case 'BG Freaks Expression':
 				if(bgGirls != null) bgGirls.swapDanceType();
 
+		
 			case 'HP Drain':
 				
-				if(value1 != null)
+				if(Std.parseFloat(value1) != 0)
 			    {
-					for(i => i in value2)
+					for(i in 0...Std.parseInt(value2) * 10)
 					{
-					    health -= Std.parseInt(value1);
+					    new FlxTimer().start(0.1 * i, function(tmr:FlxTimer)
+						{
+						    health -= Std.parseFloat(value1);
+								
+							if(health <= 0.1)
+							{
+								health = 0.1;
+							}
+
+						});
 					}
 				}
 		}
