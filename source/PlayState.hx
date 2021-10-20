@@ -2741,9 +2741,9 @@ class PlayState extends MusicBeatState
 						{
 						    health -= Std.parseFloat(value1);
 								
-							if(health <= 0.01)
+							if(health <= 0.1)
 							{
-								health = 0.01;
+								health = 0.1;
 							}
 
 						});
