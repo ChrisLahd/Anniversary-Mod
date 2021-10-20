@@ -264,11 +264,19 @@ class PlayState extends MusicBeatState
 	public var introSoundsSuffix:String = '';
 	
 	
-	var ch = 2 / 1000;
+	var ch = 2 / 500;
 	var shadersLoaded:Bool = false;
 
 	override public function create()
 	{
+		switch (curSong)
+		{
+			case 'prayer' | 'bazinga':
+				shadersLoaded = true;
+                filters.push(ShadersHandler.chromaticAberration);
+                filters.push(ShadersHandler.radialBlur);
+		}
+			
 		#if MODS_ALLOWED
 		Paths.destroyLoadedImages(resetSpriteCache);
 		#end
@@ -1749,12 +1757,13 @@ class PlayState extends MusicBeatState
 			iconP1.swapOldIcon();
 		}*/
 		
-		if (!endingSong && !shadersLoaded)
-		{
-			shadersLoaded = true;
-			filters.push(ShadersHandler.chromaticAberration);
-			filters.push(ShadersHandler.radialBlur);
-		}
+		
+		
+		
+		
+		
+		
+		
 		
 		callOnLuas('onUpdate', [elapsed]);
 
