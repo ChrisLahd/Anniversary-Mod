@@ -261,14 +261,6 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
-		switch (SONG.song.toLowerCase())
-		{
-			case 'prayer' | 'bazinga':
-				shadersLoaded = true;
-                filters.push(ShadersHandler.chromaticAberration);
-                filters.push(ShadersHandler.radialBlur);
-		}
-			
 		#if MODS_ALLOWED
 		Paths.destroyLoadedImages(resetSpriteCache);
 		#end
@@ -1734,19 +1726,7 @@ class PlayState extends MusicBeatState
 		{
 			iconP1.swapOldIcon();
 		}*/
-<<<<<<< HEAD
 		
-		
-		
-		
-		
-		
-		
-		
-		
-=======
-
->>>>>>> parent of 35388dc (Revert "Revert "Added chromatic aberration"")
 		callOnLuas('onUpdate', [elapsed]);
 
 		switch (curStage)
