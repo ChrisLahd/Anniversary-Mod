@@ -1,6 +1,5 @@
 package;
 
-import openfl.filters.BitmapFilterShader;
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -43,18 +42,14 @@ import lime.utils.Assets;
 import openfl.display.BlendMode;
 import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
-import openFl.utils.*;
-import openfl.filters.BitmapFilter;
 import openfl.utils.Assets as OpenFlAssets;
 import editors.ChartingState;
 import editors.CharacterEditorState;
 import flixel.group.FlxSpriteGroup;
-import ShadersHandler;
 import Achievements;
 import StageData;
 import FunkinLua;
 import DialogueBoxPsych;
-import RadialBlur;
 import Note;
 
 
@@ -66,9 +61,6 @@ using StringTools;
 
 class PlayState extends MusicBeatState
 {
-
-	var filters:Array<BitmapFilter> = [];
-
 	public static var STRUM_X = 42;
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
@@ -297,13 +289,6 @@ class PlayState extends MusicBeatState
 		FlxG.cameras.add(camHUD);
 		FlxG.cameras.add(camOther);
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
-
-		camGame.setFilters(filters);
-		camGame.filtersEnabled = true;
-		camHUD.setFilters(filters);
-		camHUD.filtersEnabled = true;
-		camOther.filtersEnabled = true;
-		camOther.setFilters(filters);
 
 		#if desktop
 		FlxCamera.defaultCameras = [camGame];
@@ -1726,11 +1711,6 @@ class PlayState extends MusicBeatState
 		super.onFocusLost();
 	}
 
-
-	
-		
-
-
 	function resyncVocals():Void
 	{
 		if(finishTimer != null) return;
@@ -1747,8 +1727,6 @@ class PlayState extends MusicBeatState
 	var startedCountdown:Bool = false;
 	var canPause:Bool = true;
 	var limoSpeed:Float = 0;
-    
-	
 
 	override public function update(elapsed:Float)
 	{
@@ -1756,6 +1734,7 @@ class PlayState extends MusicBeatState
 		{
 			iconP1.swapOldIcon();
 		}*/
+<<<<<<< HEAD
 		
 		
 		
@@ -1765,6 +1744,9 @@ class PlayState extends MusicBeatState
 		
 		
 		
+=======
+
+>>>>>>> parent of 35388dc (Revert "Revert "Added chromatic aberration"")
 		callOnLuas('onUpdate', [elapsed]);
 
 		switch (curStage)
@@ -1893,12 +1875,6 @@ class PlayState extends MusicBeatState
 		}
 
 		super.update(elapsed);
-
-
-		ch = FlxG.random.int(1,5) / 900;
-		ch = FlxG.random.int(1,5) / 1000;
-		ShadersHandler.setChrome(ch);
-		ShadersHandler.setRadialBlur(640+(FlxG.random.int(-10,10)),360+(FlxG.random.int(-10,10)),FlxG.random.float(0.001,0.005));
 
 		if(ratingString == '?') {
 			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ' + ratingString;
@@ -3812,9 +3788,6 @@ class PlayState extends MusicBeatState
 	override function beatHit()
 	{
 		super.beatHit();
-
-
-		
 
 		if(lastBeatHit >= curBeat) {
 			trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
