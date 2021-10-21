@@ -269,7 +269,7 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
-		switch (curSong)
+		switch (SONG.song.toLowerCase())
 		{
 			case 'prayer' | 'bazinga':
 				shadersLoaded = true;
