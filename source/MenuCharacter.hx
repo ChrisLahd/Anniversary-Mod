@@ -73,6 +73,7 @@ class MenuCharacter extends FlxSprite
 				frames = Paths.getSparrowAtlas('menucharacters/' + charFile.image);
 				animation.addByPrefix('idle', charFile.idle_anim, 24);
 				animation.addByPrefix('confirm', charFile.confirm_anim, 24, false);
+				alpha = 0;
 
 				if(charFile.scale != 1) {
 					scale.set(charFile.scale, charFile.scale);
