@@ -2235,7 +2235,8 @@ class PlayState extends MusicBeatState
 			}
 		}
 		
-		#if !debug
+		if (!isStoryMode)
+		{
 		if(!endingSong && !startingSong) {
 			if (FlxG.keys.justPressed.ONE) {
 				KillNotes();
@@ -2277,12 +2278,12 @@ class PlayState extends MusicBeatState
 				vocals.play();
 			}
 		}
+	}
 
 		setOnLuas('cameraX', camFollowPos.x);
 		setOnLuas('cameraY', camFollowPos.y);
 		setOnLuas('botPlay', PlayState.cpuControlled);
 		callOnLuas('onUpdatePost', [elapsed]);
-		#end
 	}
 	
 
