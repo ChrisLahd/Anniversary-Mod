@@ -261,13 +261,6 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
-		switch (SONG.song.toLowerCase())
-		{
-			case 'prayer' | 'bazinga':
-				shadersLoaded = true;
-                filters.push(ShadersHandler.chromaticAberration);
-                filters.push(ShadersHandler.radialBlur);
-		}
 			
 		#if MODS_ALLOWED
 		Paths.destroyLoadedImages(resetSpriteCache);
@@ -378,6 +371,8 @@ class PlayState extends MusicBeatState
 		{
 			case 'stage': //Week 1
 
+			    defaultCamZoom = 0.6;
+
 				var bg:BGSprite = new BGSprite('stageback', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
@@ -405,139 +400,139 @@ class PlayState extends MusicBeatState
 				}
 
 			case "anthypathy":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/Anthypathy170', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "ballistic":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/ballistic105', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "bazinga":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/bazinga', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
             case "beserk":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/beserk', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "boopeboo":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/Boopeboo', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "bside-endless":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/B-Side Endless', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "consetration":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/consetrationbpm205', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
             
 			case "crucify":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/crucify', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "dadbattle":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/DadBattle', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "demonslayerdawn":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/DemonslayerDawn', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
             
 			case "demonslayerday":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/DemonslayerDay', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 				
 			case "demonslayernight":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/DemonslayerNight', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "garcellodawn":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.6;
 				var bg:BGSprite = new BGSprite('stages/Garcellodawn', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
             
 			case "garcellonight":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/Garcellonight', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "headlock":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/Headlock', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "monkez":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/Monkez', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
             
 			case "qt":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/QT', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "rematch":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/Rematch', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "repentancetaki":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/repentancetaki', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
             
 			case "shitpost":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/shitpost', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "socialdistance":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/Social_Distance', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "tooslow":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/TooSlow', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
 			case "youcantrun":
-                defaultCamZoom = 0.85;
+                defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/Youcantrun', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
@@ -1734,19 +1729,8 @@ class PlayState extends MusicBeatState
 		{
 			iconP1.swapOldIcon();
 		}*/
-<<<<<<< HEAD
 		
 		
-		
-		
-		
-		
-		
-		
-		
-=======
-
->>>>>>> parent of 35388dc (Revert "Revert "Added chromatic aberration"")
 		callOnLuas('onUpdate', [elapsed]);
 
 		switch (curStage)
