@@ -471,9 +471,9 @@ class PlayState extends MusicBeatState
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
-			case "garcellodawn":
+			case "tutorial":
                 defaultCamZoom = 0.6;
-				var bg:BGSprite = new BGSprite('stages/Garcellodawn', -380, -100, 0.9, 0.9);
+				var bg:BGSprite = new BGSprite('stages/Tutorial', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
             
@@ -3757,6 +3757,16 @@ class PlayState extends MusicBeatState
 
 		if(curStep == lastStepHit) {
 			return;
+		}
+
+
+		if (SONG.song.toLowerCase() == "spookeez")
+		{
+			switch (curStep)
+			{
+				case 74 | 547 | 702 | 768 | 938 | 976 | 1166 | 1350 | 1412:
+				    FlxG.camera.flash(FlxColor.WHITE, 0.65);
+			}
 		}
 
 		lastStepHit = curStep;
