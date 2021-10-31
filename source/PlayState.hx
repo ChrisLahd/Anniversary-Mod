@@ -1929,7 +1929,7 @@ class PlayState extends MusicBeatState
 		
 		maxhealth = 2 - healthcap;
 
-		if (health < maxhealth - 1.3)
+		if (health < maxhealth - 1.3 && SONG.song.toLowerCase() != "accelerant")
 			healthblock(50, 500, false);
 
 

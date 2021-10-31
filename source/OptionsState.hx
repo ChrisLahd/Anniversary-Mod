@@ -90,6 +90,7 @@ class OptionsState extends MusicBeatState
 			}
 
 			switch(options[curSelected]) {
+				
 				case 'Notes':
 					openSubState(new NotesSubstate());
 
@@ -122,7 +123,6 @@ class OptionsState extends MusicBeatState
 		}
 	}
 }
-
 
 
 class NotesSubstate extends MusicBeatSubstate

@@ -452,6 +452,15 @@ class MainMenuState extends MusicBeatState
 				selectedSomethin = true;
 				MusicBeatState.switchState(new MasterEditorMenu());
 			}
+			else if(FlxG.keys.justPressed.SIX)
+			{
+				FlxG.save.data.skin = 1;
+			}
+			else if(FlxG.keys.justPressed.FIVE)
+		    {
+				FlxG.save.data.skin = 0;
+			}
+
 			#end
 		}
 

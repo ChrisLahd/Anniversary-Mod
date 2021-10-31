@@ -358,7 +358,7 @@ class Alphabet extends FlxSpriteGroup
 
 class AlphaCharacter extends FlxSprite
 {
-	public static var alphabet:String = "abcdefghijklmnopqrstuvwxyz";
+	public static var alphabet:String = "abcdefghijklmnopqrstuvwxyz`";
 
 	public static var numbers:String = "1234567890";
 
@@ -481,6 +481,7 @@ class AlphaCharacter extends FlxSprite
 				animation.addByPrefix(letter, 'exclamation point', 24);
 			case ",":
 				animation.addByPrefix(letter, 'comma', 24);
+			
 			default:
 				animation.addByPrefix(letter, letter, 24);
 		}
