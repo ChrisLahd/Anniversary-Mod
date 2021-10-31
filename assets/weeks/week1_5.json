@@ -1,0 +1,25 @@
+{
+	"storyName": "HD",
+	"hideFreeplay": false,
+	"weekBackground": "1.5",
+	"weekBefore": "week1.5",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"nerves",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Week 3"
+}

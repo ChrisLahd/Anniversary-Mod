@@ -153,7 +153,7 @@ class PlayState extends MusicBeatState
 	public var health:Float = 1;
 	public var combo:Int = 0;
 
-	public static var moveAmount:Float = 10; // The amount that the camera tweens on each note hit
+	public static var moveAmount:Float = 13; // The amount that the camera tweens on each note hit
 
 	private var healthBarBG:AttachedSprite;
 	public var healthBar:FlxBar;
@@ -399,9 +399,9 @@ class PlayState extends MusicBeatState
 					add(stageCurtains);
 				}
 
-			case "anthypathy":
+			case "ruria":
                 defaultCamZoom = 0.8;
-				var bg:BGSprite = new BGSprite('stages/Anthypathy170', -380, -100, 0.9, 0.9);
+				var bg:BGSprite = new BGSprite('stages/ruria', -380, -100, 0.9, 0.9);
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
@@ -471,12 +471,6 @@ class PlayState extends MusicBeatState
 				add(bg);
                 bg.setGraphicSize(Std.int(bg.width * 1.1425));
 
-			case "tutorial":
-                defaultCamZoom = 0.6;
-				var bg:BGSprite = new BGSprite('stages/Tutorial', -380, -100, 0.9, 0.9);
-				add(bg);
-                bg.setGraphicSize(Std.int(bg.width * 1.1425));
-            
 			case "garcellonight":
                 defaultCamZoom = 0.8;
 				var bg:BGSprite = new BGSprite('stages/Garcellonight', -380, -100, 0.9, 0.9);
@@ -3815,10 +3809,20 @@ class PlayState extends MusicBeatState
 		{
 			moveCameraSection(Std.int(curStep / 16));
 		}
-		if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.camZooms && curBeat % 4 == 2)
+
+
+		if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.camZooms && curBeat % 4 == 0)
 		{
-			FlxG.camera.zoom += 0.025;
-			camHUD.zoom += 0.06;
+			if (SONG.song.toLowerCase() == "crucify")
+			{
+				FlxG.camera.zoom += 0.035;
+				camHUD.zoom += 0.06;
+			}
+			else
+			{
+				FlxG.camera.zoom += 0.020;
+				camHUD.zoom += 0.04;
+			}
 		}
 
 		iconP1.setGraphicSize(Std.int(iconP1.width + 30));
