@@ -1,0 +1,30 @@
+{
+	"songs": [
+		[
+			"nerves",
+			"garcello",
+			[
+				80,
+				173,
+				113
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "1.5",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "hd",
+	"weekName": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

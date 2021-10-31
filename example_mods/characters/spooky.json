@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft",
+			"indices": [],
+			"name": "idlespooklef"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
+			"indices": [],
+			"name": "idlespookright"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				10
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "spookyhey",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				60,
+				20
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "leftspook",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-60,
+				16
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "rightspook",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				10
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "downspook",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				20,
+				16
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "upspook",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/spookykids",
+	"position": [
+		-200,
+		-20
+	],
+	"healthicon": "spooky",
+	"flip_x": false,
+	"healthbar_colors": [
+		213,
+		126,
+		0
+	],
+	"camera_position": [
+		190,
+		50
+	],
+	"sing_duration": 4,
+	"scale": 0.9
+}

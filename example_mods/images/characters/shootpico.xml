@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="shootpico.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="dodge_one0000" x="0" y="0" width="600" height="700"/>
+	<SubTexture name="dodge_one0001" x="600" y="0" width="600" height="700"/>
+	<SubTexture name="dodge_one0002" x="1200" y="0" width="600" height="700"/>
+	<SubTexture name="dodge_one0003" x="1800" y="0" width="600" height="700"/>
+	<SubTexture name="dodge_one0004" x="2400" y="0" width="600" height="700"/>
+	<SubTexture name="dodge_two0000" x="3000" y="0" width="600" height="700"/>
+	<SubTexture name="dodge_two0001" x="3600" y="0" width="600" height="700"/>
+	<SubTexture name="dodge_two0002" x="4200" y="0" width="600" height="700"/>
+	<SubTexture name="dodge_two0003" x="4800" y="0" width="600" height="700"/>
+	<SubTexture name="dodge_two0004" x="5400" y="0" width="600" height="700"/>
+	<SubTexture name="gopico_down0000" x="6000" y="0" width="600" height="600"/>
+	<SubTexture name="gopico_down0001" x="6600" y="0" width="600" height="600"/>
+	<SubTexture name="gopico_down0002" x="7200" y="0" width="600" height="600"/>
+	<SubTexture name="gopico_down0003" x="0" y="700" width="600" height="600"/>
+	<SubTexture name="gopico_down0004" x="600" y="700" width="600" height="600"/>
+	<SubTexture name="gopico_idle0000" x="1200" y="700" width="600" height="600" frameX="0" frameY="-1" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0001" x="1800" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0002" x="2400" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0003" x="3000" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0004" x="3600" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0005" x="4200" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0006" x="4800" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0007" x="5400" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0008" x="6000" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0009" x="6600" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0010" x="7200" y="700" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0011" x="0" y="1300" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_idle0012" x="600" y="1300" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="601"/>
+	<SubTexture name="gopico_left0000" x="1200" y="1300" width="600" height="600" frameX="-5" frameY="0" frameWidth="605" frameHeight="604"/>
+	<SubTexture name="gopico_left0001" x="1800" y="1300" width="600" height="600" frameX="0" frameY="-4" frameWidth="605" frameHeight="604"/>
+	<SubTexture name="gopico_left0002" x="2400" y="1300" width="600" height="600" frameX="0" frameY="-4" frameWidth="605" frameHeight="604"/>
+	<SubTexture name="gopico_left0003" x="3000" y="1300" width="600" height="600" frameX="0" frameY="-4" frameWidth="605" frameHeight="604"/>
+	<SubTexture name="gopico_left0004" x="3600" y="1300" width="600" height="600" frameX="0" frameY="-4" frameWidth="605" frameHeight="604"/>
+	<SubTexture name="gopico_right0000" x="4200" y="1300" width="600" height="600" frameX="0" frameY="0" frameWidth="600" frameHeight="606"/>
+	<SubTexture name="gopico_right0001" x="4800" y="1300" width="600" height="600" frameX="0" frameY="-6" frameWidth="600" frameHeight="606"/>
+	<SubTexture name="gopico_right0002" x="5400" y="1300" width="600" height="600" frameX="0" frameY="-6" frameWidth="600" frameHeight="606"/>
+	<SubTexture name="gopico_right0003" x="6000" y="1300" width="600" height="600" frameX="0" frameY="-6" frameWidth="600" frameHeight="606"/>
+	<SubTexture name="gopico_right0004" x="6600" y="1300" width="600" height="600" frameX="0" frameY="-6" frameWidth="600" frameHeight="606"/>
+	<SubTexture name="gopico_up0000" x="7200" y="1300" width="600" height="600"/>
+	<SubTexture name="gopico_up0001" x="0" y="1900" width="600" height="600"/>
+	<SubTexture name="gopico_up0002" x="600" y="1900" width="600" height="600"/>
+	<SubTexture name="gopico_up0003" x="1200" y="1900" width="600" height="600"/>
+	<SubTexture name="gopico_up0004" x="1800" y="1900" width="600" height="600"/>
+	<SubTexture name="picoshoot_one0000" x="2400" y="1900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_one0001" x="3400" y="1900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_one0002" x="4400" y="1900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_one0003" x="5400" y="1900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_one0004" x="6400" y="1900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_one0005" x="0" y="2900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_one0006" x="1000" y="2900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_two0000" x="2000" y="2900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_two0001" x="3000" y="2900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_two0002" x="4000" y="2900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_two0003" x="5000" y="2900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_two0004" x="6000" y="2900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_two0005" x="7000" y="2900" width="1000" height="1000"/>
+	<SubTexture name="picoshoot_two0006" x="0" y="3900" width="1000" height="1000"/>
+</TextureAtlas>

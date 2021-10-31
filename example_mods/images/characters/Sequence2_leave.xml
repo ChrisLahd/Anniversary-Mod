@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sequence2_leave.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Sequence2_gone0000" x="4186" y="2922" width="2013" height="1391"/>
+	<SubTexture name="Sequence2_gone0001" x="100" y="100" width="2013" height="1391"/>
+	<SubTexture name="Sequence2_gone0002" x="2133" y="100" width="2013" height="1391"/>
+	<SubTexture name="Sequence2_gone0003" x="4166" y="100" width="2013" height="1391"/>
+	<SubTexture name="Sequence2_gone0004" x="100" y="1511" width="2013" height="1391"/>
+	<SubTexture name="Sequence2_gone0005" x="2133" y="1511" width="2013" height="1391"/>
+	<SubTexture name="Sequence2_gone0006" x="4166" y="1511" width="2013" height="1391"/>
+	<SubTexture name="Sequence2_gone0007" x="100" y="2922" width="2013" height="1391"/>
+	<SubTexture name="Sequence2_gone0008" x="2133" y="2922" width="2013" height="1391"/>
+	<SubTexture name="Sequence2_gone0009" x="4166" y="2922" width="0" height="0" frameX="0" frameY="0" frameWidth="2013" frameHeight="1391"/>
+	<SubTexture name="Sequence2_idle0000" x="4186" y="2922" width="2013" height="1391"/>
+</TextureAtlas>

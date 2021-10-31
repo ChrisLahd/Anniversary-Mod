@@ -1,8 +1,8 @@
 {
-	"storyName": "Ciggie",
+	"storyName": "HD",
 	"hideFreeplay": false,
 	"weekBackground": "1.5",
-	"weekBefore": "week1",
+	"weekBefore": "week1.5",
 	"startUnlocked": true,
 	"weekCharacters": [
 		"",
@@ -21,5 +21,5 @@
 		]
 	],
 	"hideStoryMode": false,
-	"weekName": "Week 1.5"
+	"weekName": "Week 3"
 }

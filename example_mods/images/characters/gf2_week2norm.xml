@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gf2_week2norm.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idlegf10000" x="100" y="100" width="950" height="1033"/>
+	<SubTexture name="idlegf10001" x="1070" y="100" width="950" height="1033"/>
+	<SubTexture name="idlegf10002" x="2040" y="100" width="950" height="1033"/>
+	<SubTexture name="idlegf10003" x="3010" y="100" width="950" height="1033"/>
+	<SubTexture name="idlegf10004" x="3980" y="100" width="950" height="1033"/>
+	<SubTexture name="idlegf10005" x="4950" y="100" width="950" height="1033"/>
+	<SubTexture name="idlegf10006" x="5920" y="100" width="950" height="1033"/>
+	<SubTexture name="idlegf10007" x="6890" y="100" width="950" height="1033"/>
+	<SubTexture name="idlegf10008" x="100" y="1153" width="950" height="1033"/>
+	<SubTexture name="idlegf10009" x="1070" y="1153" width="950" height="1033"/>
+	<SubTexture name="idlegf20000" x="2040" y="1153" width="950" height="1033"/>
+	<SubTexture name="idlegf20001" x="3010" y="1153" width="950" height="1033"/>
+	<SubTexture name="idlegf20002" x="3980" y="1153" width="950" height="1033"/>
+	<SubTexture name="idlegf20003" x="4950" y="1153" width="950" height="1033"/>
+	<SubTexture name="idlegf20004" x="5920" y="1153" width="950" height="1033"/>
+	<SubTexture name="idlegf20005" x="6890" y="1153" width="950" height="1033"/>
+	<SubTexture name="idlegf20006" x="100" y="2206" width="950" height="1033"/>
+	<SubTexture name="idlegf20007" x="1070" y="2206" width="950" height="1033"/>
+	<SubTexture name="idlegf20008" x="2040" y="2206" width="950" height="1033"/>
+	<SubTexture name="idlegf20009" x="3010" y="2206" width="950" height="1033"/>
+</TextureAtlas>

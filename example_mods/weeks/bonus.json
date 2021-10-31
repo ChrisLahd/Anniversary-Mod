@@ -1,0 +1,39 @@
+{
+	"storyName": "bonus songs",
+	"hideFreeplay": false,
+	"weekBackground": "8",
+	"weekBefore": "week2",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": false,
+	"songs": [
+		[
+			"prayer",
+			"taki",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"accelerant",
+			"stockings",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"weekName": "Custom Week"
+}

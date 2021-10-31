@@ -1,0 +1,30 @@
+{
+	"storyName": "1 year anniversary",
+	"hideFreeplay": false,
+	"weekBackground": "tut",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"tutorial",
+			"gf",
+			[
+				255,
+				0,
+				135
+			]
+		]
+	],
+	"weekName": "Custom Week"
+}

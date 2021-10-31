@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dad_berserk_beepbox.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="daddown0000" x="0" y="0" width="988" height="1933" frameX="0" frameY="-27" frameWidth="988" frameHeight="1960"/>
+	<SubTexture name="daddown0001" x="988" y="0" width="945" height="1952" frameX="-20" frameY="-8" frameWidth="988" frameHeight="1960"/>
+	<SubTexture name="daddown0002" x="1933" y="0" width="924" height="1959" frameX="-29" frameY="0" frameWidth="988" frameHeight="1960"/>
+	<SubTexture name="dadidle0000" x="2857" y="0" width="1947" height="1503"/>
+	<SubTexture name="dadidle0001" x="4804" y="0" width="1947" height="1503"/>
+	<SubTexture name="dadidle0002" x="0" y="1959" width="1947" height="1503"/>
+	<SubTexture name="dadidle0003" x="1947" y="1959" width="1947" height="1503"/>
+	<SubTexture name="dadidle0004" x="3894" y="1959" width="1947" height="1503"/>
+	<SubTexture name="dadidle0005" x="5841" y="1959" width="1947" height="1503"/>
+	<SubTexture name="dadleft0000" x="0" y="3462" width="1989" height="1866"/>
+	<SubTexture name="dadleft0001" x="1989" y="3462" width="1989" height="1866"/>
+	<SubTexture name="dadleft0002" x="3978" y="3462" width="1989" height="1866"/>
+	<SubTexture name="dadright0000" x="5967" y="3462" width="1794" height="1539"/>
+	<SubTexture name="dadright0001" x="0" y="5328" width="1794" height="1539"/>
+	<SubTexture name="dadup0000" x="1794" y="5328" width="1986" height="1596"/>
+	<SubTexture name="dadup0001" x="3780" y="5328" width="1986" height="1596"/>
+	<SubTexture name="dadup0002" x="5766" y="5328" width="1986" height="1596"/>
+</TextureAtlas>

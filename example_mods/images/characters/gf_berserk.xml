@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gf_berserk.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gfcheer0000" x="0" y="0" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0001" x="1306" y="0" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0002" x="2612" y="0" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0003" x="3918" y="0" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0004" x="5224" y="0" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0005" x="6530" y="0" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0006" x="0" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0007" x="1306" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0008" x="2612" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0009" x="3918" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0010" x="5224" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0011" x="5224" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0012" x="5224" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0013" x="5224" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0014" x="5224" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0015" x="5224" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0016" x="5224" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0017" x="5224" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0018" x="6530" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfcheer0019" x="6530" y="1250" width="1306" height="1250"/>
+	<SubTexture name="gfleft0000" x="0" y="2500" width="1306" height="1250"/>
+	<SubTexture name="gfleft0001" x="1306" y="2500" width="1306" height="1250"/>
+	<SubTexture name="gfleft0002" x="2612" y="2500" width="1306" height="1250"/>
+	<SubTexture name="gfleft0003" x="3918" y="2500" width="1306" height="1250"/>
+	<SubTexture name="gfleft0004" x="5224" y="2500" width="1306" height="1250"/>
+	<SubTexture name="gfleft0005" x="6530" y="2500" width="1306" height="1250"/>
+	<SubTexture name="gfleft0006" x="0" y="3750" width="1306" height="1250"/>
+	<SubTexture name="gfleft0007" x="1306" y="3750" width="1306" height="1250"/>
+	<SubTexture name="gfleft0008" x="2612" y="3750" width="1306" height="1250"/>
+	<SubTexture name="gfleft0009" x="3918" y="3750" width="1306" height="1250"/>
+	<SubTexture name="gfright0000" x="5224" y="3750" width="1306" height="1250"/>
+	<SubTexture name="gfright0001" x="6530" y="3750" width="1306" height="1250"/>
+	<SubTexture name="gfright0002" x="0" y="5000" width="1306" height="1250"/>
+	<SubTexture name="gfright0003" x="1306" y="5000" width="1306" height="1250"/>
+	<SubTexture name="gfright0004" x="2612" y="5000" width="1306" height="1250"/>
+	<SubTexture name="gfright0005" x="3918" y="5000" width="1306" height="1250"/>
+	<SubTexture name="gfright0006" x="5224" y="5000" width="1306" height="1250"/>
+	<SubTexture name="gfright0007" x="6530" y="5000" width="1306" height="1250"/>
+	<SubTexture name="gfright0008" x="0" y="6250" width="1306" height="1250"/>
+	<SubTexture name="gfright0009" x="3918" y="3750" width="1306" height="1250"/>
+</TextureAtlas>

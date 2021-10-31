@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sequence3png.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Sequence3_idle0000" x="100" y="100" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singdown0000" x="2133" y="100" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singdown0001" x="4166" y="100" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singdown0002" x="100" y="1511" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singdown0003" x="2133" y="1511" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singdown0004" x="4166" y="1511" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singup0000" x="100" y="2922" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singup0001" x="2133" y="2922" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singup0002" x="4166" y="2922" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singup0003" x="100" y="4333" width="2013" height="1391"/>
+	<SubTexture name="Sequence3_singup0004" x="2133" y="4333" width="2013" height="1391"/>
+</TextureAtlas>

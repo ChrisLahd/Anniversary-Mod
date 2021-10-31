@@ -1,0 +1,111 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-9
+			],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "idle2gf",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-12
+			],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "idle1gf",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-4
+			],
+			"anim": "cheer",
+			"fps": 24,
+			"name": "shoo",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-12
+			],
+			"anim": "scared",
+			"fps": 24,
+			"name": "thatshowyea",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-6
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "leftgf",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-9
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "downgf",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				9,
+				-10
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "upgf",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				-9
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "rightgf",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/tutorialgf",
+	"position": [
+		70,
+		160
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		-120,
+		20
+	],
+	"sing_duration": 4,
+	"scale": 1.1
+}

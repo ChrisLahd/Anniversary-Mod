@@ -1,0 +1,137 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-9,
+				10
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-loop",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			],
+			"name": "Dad Sing Note LEFT"
+		},
+		{
+			"offsets": [
+				0,
+				27
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-loop",
+			"indices": [
+				15,
+				16,
+				17,
+				18
+			],
+			"name": "Dad Sing Note RIGHT"
+		},
+		{
+			"offsets": [
+				-6,
+				50
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-loop",
+			"indices": [
+				56,
+				57,
+				58,
+				59
+			],
+			"name": "Dad Sing Note UP"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				140,
+				-100
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "WhatYouKnowAboutRollingDownInTheDeep",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				810,
+				530
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "dadidle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				811,
+				750
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "dadleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				250,
+				790
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "daddown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				620,
+				537
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "dadright",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				814,
+				580
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "dadup",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/dad_berserk_notext",
+	"position": [
+		-120,
+		70
+	],
+	"healthicon": "dad_week1",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		0,
+		0
+	],
+	"camera_position": [
+		0,
+		-250
+	],
+	"sing_duration": 6.1,
+	"scale": 0.6
+}

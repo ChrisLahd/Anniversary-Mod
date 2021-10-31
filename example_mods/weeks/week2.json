@@ -1,0 +1,48 @@
+{
+	"songs": [
+		[
+			"spookez",
+			"spooky",
+			[
+				255,
+				193,
+				53
+			]
+		],
+		[
+			"bazinga",
+			"taki",
+			[
+				222,
+				222,
+				255
+			]
+		],
+		[
+			"crucify",
+			"taki",
+			[
+				222,
+				222,
+				255
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "2",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "0lovelydrawings/cardbordtoaster",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
