@@ -95,13 +95,15 @@ class Note extends FlxSprite
 					} else {
 						missHealth = 0.45;
 					}
-					hitCausesMiss = true;
+					hitCausesMiss = true; // makes it think u missed when u hit
 				case 'No Animation':
 					noAnimation = true;
 
-			    case 'Damage Note':
-					missHealth = 1.5;
-					reloadNote('ATTACK');
+			    case 'Knife Note':
+					ignoreNote = mustPress;
+					missHealth = 2;
+					hitCausesMiss = true;
+					reloadNote('HURT2');
 
 
 			}
