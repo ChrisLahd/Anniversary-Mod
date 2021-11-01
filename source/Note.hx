@@ -99,6 +99,10 @@ class Note extends FlxSprite
 				case 'No Animation':
 					noAnimation = true;
 
+				case 'Damage Note':
+					reloadNote('ATTACK');
+					missHealth -= 0.5;
+
 			    case 'Knife Note':
 					ignoreNote = mustPress;
 					missHealth = 2;

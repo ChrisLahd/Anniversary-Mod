@@ -28,7 +28,7 @@ class CreditsState extends MusicBeatState
 		['ChrisLad',		'chrislad',		'Programmer',		'https://twitter.com/ChrisLahd',		0xFFFF00FF],
 		['Gooble',		'gooble',		'Artist / Animator',		'https://twitter.com/gigooble',		0xFFA53600],
 		['IAmDaDoge',		'iamdadoge',		'Composer',		'https://soundcloud.com/iamdadogeofdafuture',		0xFF6B00FF],
-		['Egg Overlord',	'egg',		'Tutorial Art',		'https://www.youtube.com/channel/UCE5VhGcD_TwkzL-nHc3ewZg',		0xFFFFFFFF],
+		['Egg Overlord',		'egg',		'Tutorial Art',		'https://www.youtube.com/channel/UCE5VhGcD_TwkzL-nHc3ewZg',		0xFFFFFFFF],
 		['Shadow Mario',		'shadowmario',		'Coding Help',		'https://twitter.com/Shadow_Mario_',		0xFFFFDD33],
 		[''],
 		['Psych Engine Team'],
