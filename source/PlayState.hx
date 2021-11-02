@@ -206,6 +206,7 @@ class PlayState extends MusicBeatState
 	var grpLimoParticles:FlxTypedGroup<BGSprite>;
 	var grpLimoDancers:FlxTypedGroup<BackgroundDancer>;
 	var fastCar:BGSprite;
+	var animbgevent:BGSprite;
 
 	var upperBoppers:BGSprite;
 	var bottomBoppers:BGSprite;
@@ -215,6 +216,7 @@ class PlayState extends MusicBeatState
 	var bgGirls:BackgroundGirls;
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 	var bgGhouls:BGSprite;
+	public var eventName:String;
 
 	public var songScore:Int = 0;
 	public var songHits:Int = 0;
@@ -2713,6 +2715,60 @@ class PlayState extends MusicBeatState
 						});
 					}
 				}
+
+			case 'Background Change':
+
+			    if (value1 != null)
+				{
+					
+
+					if (value1.endsWith('-animated'))
+					{
+					
+						var valuesArray:Array<String> = [value1, value2];
+					    var split:Array<String> = valuesArray[1].split(',');
+					    var split2:Array<String> = valuesArray[2].split(',');
+					    var name:String = split[0].trim();
+					    var animname:String = split[1].trim();
+					    var offsetx = split2[0].trim();
+					    var offsety = split2[1].trim();
+
+						var animbgevent:BGSprite = new BGSprite(name, Std.parseFloat(offsetx), Std.parseFloat(offsety), 0.9, 0.9, [animname], false);
+						animbgevent.cameras = [camGame];
+						animbgevent.antialiasing = true;
+
+						animbgevent.screenCenter();
+
+						add(animbgevent);
+					
+					}
+
+					var valuesArray:Array<String> = [value1, value2];
+					var split2:Array<String> = valuesArray[2].split(',');
+					var offsetx = split2[0].trim();
+					var offsety = split2[1].trim();
+
+					var bg:BGSprite = new BGSprite(value1, Std.parseInt(offsetx), Std.parseInt(offsety), 0.9, 0.9, false);
+					bg.cameras = [camGame];
+					
+					if (value1.endsWith('-pixel'))
+					{
+						bg.antialiasing = false;
+					}
+
+					bg.antialiasing = true;
+
+					bg.screenCenter();
+
+					add(bg);
+					add(dad);
+				}
+
+				else
+
+				{
+					// Do nothing smh
+				}
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
@@ -3852,6 +3908,12 @@ class PlayState extends MusicBeatState
 			dad.dance();
 		}
 
+	    if (eventName == "Background Change")
+		{
+			animbgevent.dance();
+		}
+			
+
 		switch (curStage)
 		{
 			case 'school':
@@ -3875,6 +3937,7 @@ class PlayState extends MusicBeatState
 					});
 				}
 
+			
 				if (FlxG.random.bool(10) && fastCarCanDrive)
 					fastCarDrive();
 			case "philly":

@@ -1,22 +1,30 @@
 {
 	"songs": [
-		["Cocoa", "parents", [160, 209, 255]],
-		["Eggnog", "parents", [160, 209, 255]],
-		["Winter Horrorland", "monster", [160, 209, 255]]
+		[
+			"???",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
 	],
-
+	"hideFreeplay": true,
+	"weekBackground": "5",
 	"weekCharacters": [
-		"parents-christmas",
+		"dad",
 		"bf",
 		"gf"
 	],
-	"weekBackground": "christmas",
-
-	"storyName": "RED SNOW",
-	"weekBefore": "week5",
-	"weekName": "Week 6",
-	"startUnlocked": true,
-
+	"storyName": "dragon ball z",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
 	"hideStoryMode": false,
-	"hideFreeplay": true
+	"weekBefore": "week4",
+	"startUnlocked": false
 }

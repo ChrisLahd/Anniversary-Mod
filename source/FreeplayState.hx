@@ -270,6 +270,8 @@ class FreeplayState extends MusicBeatState
 		else #end if (accepted)
 		{
 			var songLowercase:String = Paths.formatToSongPath(songs[curSelected].songName);
+
+			
 			var poop:String = Highscore.formatSong(songLowercase, curDifficulty);
 			#if MODS_ALLOWED
 			if(!sys.FileSystem.exists(Paths.modsJson(songLowercase + '/' + poop)) && !sys.FileSystem.exists(Paths.json(songLowercase + '/' + poop))) {
@@ -281,7 +283,37 @@ class FreeplayState extends MusicBeatState
 				trace('Couldnt find file');
 			}
 			trace(poop);
+			PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+			PlayState.isStoryMode = false;
+			PlayState.storyDifficulty = curDifficulty;
 
+			PlayState.storyWeek = songs[curSelected].week;
+			trace('CURRENT WEEK: ' + WeekData.getWeekFileName());
+			if(colorTween != null) {
+				colorTween.cancel();
+			}
+			LoadingState.loadAndSwitchState(new PlayState());
+
+			FlxG.sound.music.volume = 0;
+					
+			destroyFreeplayVocals();
+		}
+		else if (FlxG.keys.justPressed.SHIFT) // This shit was too easy to rewrite so cry about it
+		{
+			var songLowercase:String = Paths.formatToSongPath("requiem");
+
+			
+			var poop:String = Highscore.formatSong(songLowercase, curDifficulty);
+			#if MODS_ALLOWED
+			if(!sys.FileSystem.exists(Paths.modsJson(songLowercase + '/' + poop)) && !sys.FileSystem.exists(Paths.json(songLowercase + '/' + poop))) {
+			#else
+			if(!OpenFlAssets.exists(Paths.json(songLowercase + '/' + poop))) {
+			#end
+				poop = songLowercase;
+				curDifficulty = 1;
+				trace('Couldnt find file');
+			}
+			trace(poop);
 			PlayState.SONG = Song.loadFromJson(poop, songLowercase);
 			PlayState.isStoryMode = false;
 			PlayState.storyDifficulty = curDifficulty;

@@ -1,28 +1,37 @@
 {
-	"storyName": "1 year anniversary",
+	"storyName": "bonus songs",
 	"hideFreeplay": false,
-	"weekBackground": "tut",
+	"weekBackground": "8",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
-	"weekBefore": "tutorial",
+	"weekBefore": "week2",
 	"startUnlocked": true,
 	"hideStoryMode": false,
 	"weekCharacters": [
-		"",
+		"dad",
 		"bf",
 		"gf"
 	],
 	"songs": [
 		[
-			"tutorial",
-			"gf",
+			"accelerant",
+			"stocking",
 			[
 				255,
 				0,
-				135
+				255
+			]
+		],
+		[
+			"! negaigoto",
+			"taki2",
+			[
+				146,
+				113,
+				253
 			]
 		]
 	],

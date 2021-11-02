@@ -1,22 +1,48 @@
 {
 	"songs": [
-		["Spookeez", "spooky", [34, 51, 68]],
-		["South", "spooky", [34, 51, 68]],
-		["Monster", "monster", [34, 51, 68]]
+		[
+			"spookez",
+			"spooky",
+			[
+				255,
+				193,
+				53
+			]
+		],
+		[
+			"bazinga",
+			"taki",
+			[
+				222,
+				222,
+				255
+			]
+		],
+		[
+			"crucify",
+			"taki",
+			[
+				222,
+				222,
+				255
+			]
+		]
 	],
-
+	"hideFreeplay": false,
+	"weekBackground": "2",
 	"weekCharacters": [
-		"spooky",
+		"dad",
 		"bf",
 		"gf"
 	],
-	"weekBackground": "halloween",
-
-	"storyName": "Spooky Month",
-	"weekBefore": "week1_5",
-	"weekName": "Week 2",
-	"startUnlocked": true,
-
+	"storyName": "0lovelydrawings/cardbordtoaster",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
 	"hideStoryMode": false,
-	"hideFreeplay": false
+	"weekBefore": "tutorial",
+	"startUnlocked": true
 }

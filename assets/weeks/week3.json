@@ -1,22 +1,30 @@
 {
-	"songs": [
-		["Pico", "pico", [148, 22, 83]],
-		["Philly Nice", "pico", [148, 22, 83]],
-		["Blammed", "pico", [148, 22, 83]]
+	"storyName": "silentmanjoe",
+	"hideFreeplay": true,
+	"weekBackground": "3",
+	"weekBefore": "week4",
+	"freeplayColor": [
+		146,
+		113,
+		253
 	],
-
+	"startUnlocked": false,
 	"weekCharacters": [
-		"pico",
+		"dad",
 		"bf",
 		"gf"
 	],
-	"weekBackground": "philly",
-
-	"storyName": "PICO",
-	"weekBefore": "week2",
-	"weekName": "Week 3",
-	"startUnlocked": true,
-
+	"songs": [
+		[
+			"???",
+			"blank",
+			[
+				0,
+				0,
+				0
+			]
+		]
+	],
 	"hideStoryMode": false,
-	"hideFreeplay": true
+	"weekName": "Custom Week"
 }

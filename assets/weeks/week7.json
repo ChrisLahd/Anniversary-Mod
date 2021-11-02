@@ -11,13 +11,13 @@
 		]
 	],
 	"hideFreeplay": true,
-	"weekBackground": "6",
+	"weekBackground": "7",
 	"weekCharacters": [
 		"dad",
 		"bf",
 		"gf"
 	],
-	"storyName": "demon slayer",
+	"storyName": "semi realism",
 	"weekName": "Custom Week",
 	"freeplayColor": [
 		146,
@@ -25,6 +25,6 @@
 		253
 	],
 	"hideStoryMode": false,
-	"weekBefore": "week5",
+	"weekBefore": "week6",
 	"startUnlocked": false
 }

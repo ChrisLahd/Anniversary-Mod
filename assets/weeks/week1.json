@@ -1,8 +1,13 @@
 {
-	"storyName": "Daddy Dearest",
+	"storyName": "berserk",
 	"hideFreeplay": false,
 	"weekBackground": "1",
 	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
 	"startUnlocked": true,
 	"weekCharacters": [
 		"dad",
@@ -11,7 +16,7 @@
 	],
 	"songs": [
 		[
-			"Bopeebo",
+			"Bopeebo-remix",
 			"dad",
 			[
 				146,
@@ -20,7 +25,7 @@
 			]
 		],
 		[
-			"Fresh",
+			"Fresh-remix",
 			"dad",
 			[
 				146,
@@ -29,7 +34,7 @@
 			]
 		],
 		[
-			"Dad Battle",
+			"Dad Battle-remix",
 			"dad",
 			[
 				146,
@@ -39,5 +44,5 @@
 		]
 	],
 	"hideStoryMode": false,
-	"weekName": "Week 1"
+	"weekName": "Custom Week"
 }
