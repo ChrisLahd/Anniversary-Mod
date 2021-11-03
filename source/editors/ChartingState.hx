@@ -81,7 +81,7 @@ class ChartingState extends MusicBeatState
 		['Screen Shake', "Value 1: Camera shake\nValue 2: HUD shake\n\nEvery value works as the following example: \"1, 0.05\".\nThe first number (1) is the duration.\nThe second number (0.05) is the intensity."],
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['HP Drain', "Value 1: Amount to drain Recommended (0.01)\nValue 2: Duration\n\nNOTE: THIS WILL NOT KILL, BUT WILL LEAVE THE PLAYER ON 0.01 HP "],
-		['Background Change', "Value 1: img, (if animated) xml anim\nValue 2: Size of the image (If blank: default 0,0)"]
+		['Background Change', "Value 1: img\nValue 2: offsetx, offsety (If blank: default 0,0)\n Doesn't even work smh"]
 	];
 
 	var _file:FileReference;
