@@ -118,6 +118,7 @@ class ClientPrefs {
 			skin = FlxG.save.data.skin;
 		}
 
+
 		if(FlxG.save.data.flashing != null) {
 			flashing = FlxG.save.data.flashing;
 		}

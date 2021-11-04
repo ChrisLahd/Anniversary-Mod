@@ -27,11 +27,15 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.app.Application;
 import openfl.Assets;
-
+import flixel.addons.api.FlxGameJolt;
+import GameJolt;
 using StringTools;
 
 class TitleState extends MusicBeatState
 {
+
+	
+
 	public static var muteKeys:Array<FlxKey> = [FlxKey.ZERO];
 	public static var volumeDownKeys:Array<FlxKey> = [FlxKey.NUMPADMINUS, FlxKey.MINUS];
 	public static var volumeUpKeys:Array<FlxKey> = [FlxKey.NUMPADPLUS, FlxKey.PLUS];
@@ -127,6 +131,8 @@ class TitleState extends MusicBeatState
 
 	function startIntro()
 	{
+		
+
 		if (!initialized)
 		{
 			/*var diamond:FlxGraphic = FlxGraphic.fromClass(GraphicTransTileDiamond);
@@ -314,7 +320,10 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					MusicBeatState.switchState(new MainMenuState());
+					GameJoltAPI.connect();
+                    GameJoltAPI.authDaUser(FlxG.save.data.gjUser, FlxG.save.data.gjToken, false);
+					
+					//MusicBeatState.switchState(new GameJoltLogin());
 					closedState = true;
 				});
 				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);
