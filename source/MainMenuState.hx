@@ -24,7 +24,10 @@ import Achievements;
 import editors.MasterEditorMenu;
 import WiggleEffect.WiggleEffectType;
 import Song.SwagSong;
+<<<<<<< HEAD
 //import GameJolt;
+=======
+>>>>>>> parent of 83f6944 (Added GameJolt API)
 
 #if sys
 import sys.FileSystem;
@@ -34,9 +37,6 @@ using StringTools;
 
 class MainMenuState extends MusicBeatState
 {
-
-	
-	
 	public static var psychEngineVersion:String = '0.4.2'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
@@ -68,6 +68,11 @@ class MainMenuState extends MusicBeatState
 	override function create()
 	{
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> parent of 83f6944 (Added GameJolt API)
 		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
