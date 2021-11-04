@@ -28,7 +28,7 @@ import flixel.util.FlxTimer;
 import lime.app.Application;
 import openfl.Assets;
 import flixel.addons.api.FlxGameJolt;
-import GameJolt;
+//import GameJolt;
 using StringTools;
 
 class TitleState extends MusicBeatState
@@ -320,10 +320,10 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-					GameJoltAPI.connect();
-                    GameJoltAPI.authDaUser(FlxG.save.data.gjUser, FlxG.save.data.gjToken, false);
+					//GameJoltAPI.connect();
+                    //GameJoltAPI.authDaUser(FlxG.save.data.gjUser, FlxG.save.data.gjToken, false);
 					
-					//MusicBeatState.switchState(new GameJoltLogin());
+					MusicBeatState.switchState(new MainMenuState());
 					closedState = true;
 				});
 				// FlxG.sound.play(Paths.music('titleShoot'), 0.7);

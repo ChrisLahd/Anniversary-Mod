@@ -14,7 +14,6 @@ import flixel.util.FlxGradient;
 import flixel.FlxState;
 import flixel.FlxBasic;
 import PlayState.*;
-import flixel.addons.api.FlxGameJolt;
 
 class MusicBeatState extends FlxUIState
 {
@@ -53,13 +52,7 @@ class MusicBeatState extends FlxUIState
 	}
 	#end
 
-	public function api()
-	{
-		var gameid:Int = 660780;
-	    var keystr:String = "3bd1d62d67622198522bbb279c1b8200";
-	    FlxGameJolt.init(gameid, keystr, true, "ChrisLad", "w8nCNs");
-	    FlxGameJolt.addTrophy(151355);
-	}
+	
 
 	override function update(elapsed:Float)
 	{

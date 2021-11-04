@@ -1,0 +1,177 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				18
+			],
+			"anim": "hurt",
+			"fps": 24,
+			"name": "BF hit",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-4,
+				0
+			],
+			"anim": "scared",
+			"fps": 24,
+			"name": "BF idle shaking",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				347,
+				358
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "BF dies",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				353,
+				358
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "BF Dead Loop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				356,
+				359
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "BF Dead confirm",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				294,
+				267
+			],
+			"anim": "attack",
+			"fps": 24,
+			"name": "boyfriend attack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				-40
+			],
+			"anim": "pre-attack",
+			"fps": 24,
+			"name": "bf pre attack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle_mom",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				180,
+				46
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left_mom",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				99,
+				-94
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down_mom",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				192,
+				83
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up_mom",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				112,
+				53
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right_mom",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				80,
+				-516
+			],
+			"anim": "dodge",
+			"fps": 24,
+			"name": "dodge_mom",
+			"indices": []
+		},
+		{
+			"offsets": [
+				570,
+				105
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "hey",
+			"loop": false,
+			"name": "kick_mom"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/momkick_accelerant",
+	"position": [
+		-120,
+		-220
+	],
+	"healthicon": "mom",
+	"flip_x": true,
+	"healthbar_colors": [
+		216,
+		85,
+		142
+	],
+	"camera_position": [
+		190,
+		350
+	],
+	"sing_duration": 4,
+	"scale": 0.7
+}

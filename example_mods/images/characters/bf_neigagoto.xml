@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bf_neigagoto.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bf_dodge0000" x="100" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0001" x="716" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0002" x="1332" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0003" x="1948" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0004" x="2564" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0005" x="3180" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0006" x="3796" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0007" x="4412" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0008" x="5028" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0009" x="5644" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0010" x="3180" y="100" width="596" height="837"/>
+	<SubTexture name="bf_dodge0011" x="3796" y="100" width="596" height="837"/>
+	<SubTexture name="bf_down0000" x="6260" y="100" width="785" height="869"/>
+	<SubTexture name="bf_down0001" x="7065" y="100" width="785" height="869"/>
+	<SubTexture name="bf_down0002" x="100" y="989" width="785" height="869"/>
+	<SubTexture name="bf_down0003" x="905" y="989" width="785" height="869"/>
+	<SubTexture name="bf_down0004" x="1710" y="989" width="785" height="869"/>
+	<SubTexture name="bf_idle0000" x="2515" y="989" width="754" height="837"/>
+	<SubTexture name="bf_idle0001" x="3289" y="989" width="754" height="837"/>
+	<SubTexture name="bf_idle0002" x="4063" y="989" width="754" height="837"/>
+	<SubTexture name="bf_idle0003" x="4837" y="989" width="754" height="837"/>
+	<SubTexture name="bf_idle0004" x="5611" y="989" width="754" height="837"/>
+	<SubTexture name="bf_idle0005" x="6385" y="989" width="754" height="837"/>
+	<SubTexture name="bf_idle0006" x="7159" y="989" width="754" height="837"/>
+	<SubTexture name="bf_idle0007" x="100" y="1878" width="754" height="837"/>
+	<SubTexture name="bf_idle0008" x="874" y="1878" width="754" height="837"/>
+	<SubTexture name="bf_idle0009" x="1648" y="1878" width="754" height="837"/>
+	<SubTexture name="bf_left0000" x="2422" y="1878" width="792" height="877"/>
+	<SubTexture name="bf_left0001" x="3234" y="1878" width="792" height="877"/>
+	<SubTexture name="bf_left0002" x="4046" y="1878" width="792" height="877"/>
+	<SubTexture name="bf_left0003" x="4858" y="1878" width="792" height="877"/>
+	<SubTexture name="bf_left0004" x="5670" y="1878" width="792" height="877"/>
+	<SubTexture name="bf_right0000" x="6482" y="1878" width="781" height="865"/>
+	<SubTexture name="bf_right0001" x="7283" y="1878" width="781" height="865"/>
+	<SubTexture name="bf_right0002" x="100" y="2775" width="781" height="865"/>
+	<SubTexture name="bf_right0003" x="901" y="2775" width="781" height="865"/>
+	<SubTexture name="bf_right0004" x="1702" y="2775" width="781" height="865"/>
+	<SubTexture name="bf_up0000" x="2503" y="2775" width="818" height="906"/>
+	<SubTexture name="bf_up0001" x="3341" y="2775" width="818" height="906"/>
+	<SubTexture name="bf_up0002" x="4179" y="2775" width="818" height="906"/>
+	<SubTexture name="bf_up0003" x="5017" y="2775" width="818" height="906"/>
+	<SubTexture name="bf_up0004" x="5855" y="2775" width="818" height="906"/>
+</TextureAtlas>

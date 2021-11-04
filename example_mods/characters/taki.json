@@ -1,77 +1,77 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				220,
 				290
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "idle_taki",
-			"indices": []
+			"indices": [],
+			"name": "idle_taki"
 		},
 		{
-			"loop": true,
 			"offsets": [
 				220,
 				290
 			],
-			"anim": "idle-loop",
+			"loop": true,
 			"fps": 24,
-			"name": "idleloop_taki",
-			"indices": []
+			"anim": "idle-loop",
+			"indices": [],
+			"name": "idleloop_taki"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				241,
 				300
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "left_taki",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left_taki"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				140,
 				120
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "down_taki",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down_taki"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				134,
 				350
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "up_taki",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "up_taki"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				277
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "right_taki",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right_taki"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/taki_week2",
 	"position": [
 		-220,
-		140
+		40
 	],
 	"healthicon": "taki",
 	"flip_x": false,
@@ -82,8 +82,8 @@
 	],
 	"camera_position": [
 		140,
-		-30
+		-180
 	],
 	"sing_duration": 6.1,
-	"scale": 0.6
+	"scale": 0.7
 }

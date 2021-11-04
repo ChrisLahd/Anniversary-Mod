@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle_mom"
+		},
+		{
+			"offsets": [
+				180,
+				46
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left_mom"
+		},
+		{
+			"offsets": [
+				99,
+				-94
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down_mom"
+		},
+		{
+			"offsets": [
+				192,
+				83
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up_mom"
+		},
+		{
+			"offsets": [
+				112,
+				53
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right_mom"
+		},
+		{
+			"offsets": [
+				80,
+				-516
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dodge",
+			"indices": [],
+			"name": "dodge_mom"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				190,
+				50
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "left_mom",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				-110
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "down_mom",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				190,
+				70
+			],
+			"anim": "singUPmom",
+			"fps": 24,
+			"name": "up_mom",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				140,
+				30
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "right_mom",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/mom_accelerant",
+	"position": [
+		-120,
+		-210
+	],
+	"healthicon": "mom",
+	"flip_x": true,
+	"healthbar_colors": [
+		216,
+		85,
+		142
+	],
+	"camera_position": [
+		190,
+		350
+	],
+	"sing_duration": 4,
+	"scale": 0.7
+}

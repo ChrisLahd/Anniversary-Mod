@@ -24,7 +24,7 @@ import Achievements;
 import editors.MasterEditorMenu;
 import WiggleEffect.WiggleEffectType;
 import Song.SwagSong;
-import GameJolt;
+//import GameJolt;
 
 #if sys
 import sys.FileSystem;
@@ -67,9 +67,6 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
-
-		
-
 
 		#if desktop
 		// Updating Discord Rich Presence

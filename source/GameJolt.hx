@@ -335,20 +335,19 @@ class GameJoltLogin extends MusicBeatSubstate
             trace(tokenBox.text);
             GameJoltAPI.authDaUser(usernameBox.text,tokenBox.text,true);
         });
-        signInBox.label.fieldWidth *= 3;
+        signInBox.label.size = signInBox.label.size * 2 ;
 
         helpBox = new FlxButton(0, 550, "GameJolt Token", function()
         {
-            var token:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('token', 'preload'));
-            token.x -= 100;
-            token.screenCenter(Y);
+            var token:FlxSprite = new FlxSprite().loadGraphic(Paths.image('helppp', 'preload'));
+            token.x += 80;
+            token.y += 150;
             add(token);
 
             new FlxTimer().start(3, function(tmr:FlxTimer)
                 {
                     remove(token);
                 });
-        helpBox.label.fieldWidth *= 3;
 
         });
         helpBox.color = FlxColor.fromRGB(84,155,149);
@@ -364,7 +363,7 @@ class GameJoltLogin extends MusicBeatSubstate
         logOutBox.text = "Log Out & Close";
         #end
         logOutBox.color = FlxColor.RED /*FlxColor.fromRGB(255,134,61)*/ ;
-        logOutBox.label.fieldWidth *= 3;
+        logOutBox.label.size * 2;
 
         cancelBox = new FlxButton(0,650, "Not Right Now", function()
         {
@@ -382,7 +381,7 @@ class GameJoltLogin extends MusicBeatSubstate
         {
             cancelBox.y = 550;
             cancelBox.text = "Continue";
-            cancelBox.label.fieldWidth *= 3;
+            cancelBox.label.size * 2;
             loginButtons.add(logOutBox);
         }
         loginButtons.add(cancelBox);
