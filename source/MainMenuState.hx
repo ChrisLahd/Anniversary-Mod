@@ -24,10 +24,6 @@ import Achievements;
 import editors.MasterEditorMenu;
 import WiggleEffect.WiggleEffectType;
 import Song.SwagSong;
-<<<<<<< HEAD
-//import GameJolt;
-=======
->>>>>>> parent of 83f6944 (Added GameJolt API)
 
 #if sys
 import sys.FileSystem;
@@ -68,11 +64,8 @@ class MainMenuState extends MusicBeatState
 	override function create()
 	{
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> parent of 83f6944 (Added GameJolt API)
 		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);

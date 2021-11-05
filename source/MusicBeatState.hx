@@ -52,11 +52,6 @@ class MusicBeatState extends FlxUIState
 	}
 	#end
 
-<<<<<<< HEAD
-	
-
-=======
->>>>>>> parent of 83f6944 (Added GameJolt API)
 	override function update(elapsed:Float)
 	{
 		//everyStep();

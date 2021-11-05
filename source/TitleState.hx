@@ -27,12 +27,6 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.app.Application;
 import openfl.Assets;
-<<<<<<< HEAD
-import flixel.addons.api.FlxGameJolt;
-//import GameJolt;
-=======
-
->>>>>>> parent of 83f6944 (Added GameJolt API)
 using StringTools;
 
 class TitleState extends MusicBeatState
@@ -319,12 +313,6 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
-<<<<<<< HEAD
-					//GameJoltAPI.connect();
-                    //GameJoltAPI.authDaUser(FlxG.save.data.gjUser, FlxG.save.data.gjToken, false);
-					
-=======
->>>>>>> parent of 83f6944 (Added GameJolt API)
 					MusicBeatState.switchState(new MainMenuState());
 					closedState = true;
 				});
