@@ -263,12 +263,10 @@ class GameJoltLogin extends MusicBeatSubstate
     static var trophyCheck:Bool = false;
     override function create()
     {
-//         if(!login)
-//             {
-//                 FlxG.sound.playMusic(Paths.music('freakyMenu'),0);
-//                 FlxG.sound.music.fadeIn(2, 0, 0.85);
-// 		Conductor.changeBPM(102);
-//             }
+
+        signInBox.label.size = signInBox.label.size * 2 ;
+        helpBox.label.size = helpBox.label.size * 2 ;
+        cancelBox.label.size = cancelBox.label.size * 2 ;
 
         trace("init? " + GJApi.initialized);
         FlxG.mouse.visible = true;
@@ -335,7 +333,7 @@ class GameJoltLogin extends MusicBeatSubstate
             trace(tokenBox.text);
             GameJoltAPI.authDaUser(usernameBox.text,tokenBox.text,true);
         });
-        signInBox.label.size = signInBox.label.size * 2 ;
+        
 
         helpBox = new FlxButton(0, 550, "GameJolt Token", function()
         {
@@ -414,15 +412,12 @@ class GameJoltLogin extends MusicBeatSubstate
 
     override function update(elapsed:Float)
     {
-        // if (GameJoltGameData.trophyArray.length != 0 && !trophyCheck)
-        // {
-        //     var value:Int = 0;
-        //     for (i in 0...GameJoltGameData.trophyArray.length)
-        //     {
-        //         new FlxTimer().start(0.8, function(tmr:FlxTimer){if (GameJoltAPI.isTropheyCollected(GameJoltGameData.trophyArray[i])){value ++; trophyText.text = "Trophies Collected:\n"+value+" out of "+GameJoltGameData.trophyArray.length ;}});
-        //     }
-        //     trophyCheck=true;
-        // }
+        
+        if (FlxG.keys.justPressed.ACCEPT)
+        {
+            GameJoltAPI.authDaUser(usernameBox.text,tokenBox.text,true);
+        }
+
         if (FlxG.sound.music != null)
             Conductor.songPosition = FlxG.sound.music.time;
 
@@ -434,7 +429,7 @@ class GameJoltLogin extends MusicBeatSubstate
         if (FlxG.keys.justPressed.ESCAPE)
         {
             FlxG.mouse.visible = false;
-            FlxG.switchState(new MainMenuState());
+            FlxG.switchState(new TitleState());
         }
 
         super.update(elapsed);
